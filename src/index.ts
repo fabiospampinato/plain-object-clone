@@ -1,7 +1,7 @@
 
 /* CLONE */
 
-function clone ( object, base = {} ) {
+function clone ( object, base = object.constructor () ) {
 
   for ( const key in object ) {
 
