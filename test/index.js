@@ -2,7 +2,7 @@
 /* IMPORT */
 
 import {describe} from 'ava-spec';
-import {default as clone} from '../dist'
+import {default as clone} from '../dist';
 import Fixtures from './fixtures';
 
 /* CLONE */
