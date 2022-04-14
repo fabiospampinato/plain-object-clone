@@ -1,11 +1,11 @@
 
 /* IMPORT */
 
-const {default: clone} = require ( '../dist' ),
-      Fixtures = require ( '../test/fixtures' ),
-      benchmark = require ( 'benchloop' );
+import benchmark from 'benchloop';
+import clone from '../dist/index.js';
+import Fixtures from '../test/fixtures.js';
 
-/* BENCHMARK */
+/* MAIN */
 
 benchmark.defaultOptions = Object.assign ( benchmark.defaultOptions, {
   iterations: 100000,

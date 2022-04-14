@@ -1,11 +1,11 @@
 
 /* IMPORT */
 
-import {describe} from 'ava-spec';
-import {default as clone} from '../dist';
-import Fixtures from './fixtures';
+import {describe} from 'fava';
+import clone from '../dist/index.js';
+import Fixtures from './fixtures.js';
 
-/* CLONE */
+/* MAIN */
 
 describe ( 'clone', it => {
 

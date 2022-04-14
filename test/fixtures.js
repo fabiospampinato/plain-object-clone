@@ -1,5 +1,5 @@
 
-/* FIXTURES */
+/* MAIN */
 
 const Fixtures = {
   object: {
@@ -31,4 +31,4 @@ const Fixtures = {
 
 /* EXPORT */
 
-module.exports = Fixtures;
+export default Fixtures;

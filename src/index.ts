@@ -1,15 +1,17 @@
 
-/* CLONE */
+/* MAIN */
 
-function clone ( object, base = object.constructor () ) {
+const cloneBase = ( object: any, base: any ): any => {
 
   for ( const key in object ) {
+
+    if ( !object.hasOwnProperty ( key ) ) continue;
 
     const value = object[key];
 
     if ( typeof value === 'object' && value !== null ) {
 
-      base[key] = clone ( value, value.constructor () );
+      base[key] = cloneBase ( value, value.constructor () );
 
     } else {
 
@@ -22,6 +24,12 @@ function clone ( object, base = object.constructor () ) {
   return base;
 
 }
+
+const clone = <T extends object> ( object: T ): T => {
+
+  return cloneBase ( object, object.constructor () );
+
+};
 
 /* EXPORT */
 
