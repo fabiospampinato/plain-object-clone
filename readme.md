@@ -5,13 +5,15 @@ Extremely fast function optimized for deep cloning json-serializable plain objec
 ## Install
 
 ```sh
-npm install --save plain-object-clone
+npm install plain-object-clone
 ```
 
 ## Usage
 
 ```ts
 import clone from 'plain-object-clone';
+
+// Let's clone an object
 
 clone ({ foo: 123 }); // => { foo: 123 }
 ```
